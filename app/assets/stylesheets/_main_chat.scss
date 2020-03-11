@@ -1,0 +1,132 @@
+.main_chat{
+position: absolute;
+top: 0px;
+left: 300px;
+  .group_info{
+    background-color: #ffffff;
+    height: 100px;
+    width: calc(100vw - 300px);
+    display: flex;
+    &_left{
+      height: 100px;
+      width: calc(100vw - 800px);
+      &_top{
+        height: 25px;
+        width: 120px;
+        margin: 35px 0 0 40px;
+        font-size: 20px;
+        color: #333333;
+      }
+      &_bottom{
+        height: 50x;
+        width: 120px;
+        margin: 20px 0 0 40px;
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+    &_right{
+      height: 100px;
+      width: 120px;
+      margin-left: auto;
+      &_btn{
+        height: 40px;
+        width: 72px;
+        border: solid 1px;
+        color: #38aef0;
+        padding: 8px 20px;
+        margin: 30px 20px 40px 7px ;
+        a{
+          text-decoration: none;
+          color: #38aef0;
+        }
+      }
+    }
+  } 
+}    
+
+  .message_list{
+    background-color: #fafafa;
+    height: calc(100vh - 190px);
+    width: calc(100vw - 300px);
+    padding: 40px 40px;;
+    &_text{
+      height: 30px;
+      padding-bottom: 40px;
+      display: flex;
+      &_1{
+        font-weight: bold;
+        font-size: 16px;
+      }
+      &_2{
+        font-size: 12px;
+        color: #999999;
+        margin-left: 10px;
+      }
+    }
+    &_text_10{
+      height: 60px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #434A54;
+    }
+    &_text2{
+      height: 30px;
+      padding-bottom: 40px;
+      display: flex;
+      &_21{
+        font-weight: bold;
+        font-size: 16px;
+      }
+      &_22{
+        font-size: 12px;
+        color: #999999;
+        margin-left: 10px;
+      }
+    }
+    &_text_20{
+      height: 60px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #434A54;
+    }
+  }
+
+.message_form{
+  background-color: #d2d2d2;
+  height: 90px;
+  width: calc(100vw - 300px);
+  padding: 20px 40px ;
+  &_2{
+    display: flex;
+    position: relative;
+    &_text{
+      background-color: white;
+      height: 50px;
+      width: calc(100% - 115px);
+      padding: 15px 40px 15px 10px;
+      &_image{
+        position: absolute;
+        top: 5px;
+        right: 125px;
+        font-size: 25px;
+        &_file{
+          display: none;
+        }
+      }
+    }
+    &_btn{
+      background-color: #38aef0;
+      height: 50px;
+      width: 100px;
+      padding: 12px 30px;
+      margin-left: 15px;
+      position: absolute;
+      right: 0px;
+      a{
+      color: white;
+      text-decoration: none;
+      }
+    }
+  }
+}

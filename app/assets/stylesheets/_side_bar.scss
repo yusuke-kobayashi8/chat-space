@@ -1,0 +1,64 @@
+.side_bar
+  .user_name{
+    background-color: #253141;
+    height: 100px;
+    width: 300px;
+      &_box{
+        background-color: #253141;
+        height: 20px;
+        width: 260px;
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 40px;
+        display: flex;
+          &_left{
+            height: 20px;
+            width: 200px;
+            background-color: #253141;
+            color: #ffffff;
+          }
+          &_right{
+            height: 20px;
+            width: 60px;
+            background-color: #253141;
+            display: flex;
+            .user_name_box_right_icon_a{
+              margin-left: auto;
+              a{
+                color: #ffffff;
+              }
+            }
+            .user_name_box_right_icon_b{
+              margin-left: 5px;
+              a{
+                color: #ffffff;
+              }
+            }
+          }
+      }
+}
+
+  .group_list{
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    width: 300px;
+      &_box{
+        height: 91px;
+        width: 300px;
+        &_name{
+          height: 40px;
+          width: 260px;
+          font-size: 15px;
+          color: #ffffff;
+          padding: 20px 20px 0px 20px;
+        }
+        &_message{
+          height: 11px;
+          width: 260px;
+          font-size: 11px;
+          color: #ffffff;
+          padding: 5px 20px 0 20px;
+        }
+    }
+}
+

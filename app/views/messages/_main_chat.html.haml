@@ -1,0 +1,31 @@
+.main_chat
+  .group_info 
+    .group_info_left
+      .group_info_left_top test
+      .group_info_left_bottom Member
+    .group_info_right
+      .group_info_right_btn 
+        =link_to "#" do
+          Edit
+  .message_list
+    .message_list_text 
+      .message_list_text_1 test
+      .message_list_text_2 2020/03/10(sun)
+    .message_list_text_10 test中です。
+    .message_list_text2
+      .message_list_text2_21 test
+      .message_list_text2_22 2020/03/10(sun)
+    .message_list_text_20 test中です。
+
+
+  .message_form
+    .message_form_2 
+      .message_form_2_text メッセージフォーム
+      %label{class: "message_form_2_text_image"}
+        =icon('fas', 'image')
+        %input{type: "file", class: "message_form_2_text_image_file"}
+      .message_form_2_btn 
+        =link_to "#" do
+          Send
+      
+      

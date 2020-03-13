@@ -1,18 +1,22 @@
 .side_bar
   .user_name
     .user_name_box
-      .user_name_box_left ユーザーネーム
+      .user_name_box_left 
+        = current_user.name
       .user_name_box_right
         .user_name_box_right_icon_a
-          =link_to "#" do
+          =link_to new_group_path do
             =icon('fas', 'edit')
         .user_name_box_right_icon_b
-          =link_to "#" do
+          =link_to edit_user_path(current_user) do
             =icon("fas", "cog")
 
   .group_list
-    .group_list_box
-      .group_list_box_name tech camp
-      .group_list_box_message<まだメッセージがありません>
-      
+    - current_user.groups.each do |group|
+      .group_list_box
+        =link_to '#' do
+          .group_list_box_name 
+            =group.name
+          .group_list_box_message
+            まだメッセージがありません
       

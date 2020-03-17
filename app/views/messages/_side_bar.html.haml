@@ -14,9 +14,9 @@
   .group_list
     - current_user.groups.each do |group|
       .group_list_box
-        =link_to '#' do
+        = link_to group_messages_path(group) do
           .group_list_box_name 
             =group.name
           .group_list_box_message
-            まだメッセージがありません
+            = group.show_last_message
       

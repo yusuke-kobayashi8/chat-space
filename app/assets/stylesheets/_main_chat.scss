@@ -19,7 +19,7 @@
       }
       &_bottom{
         height: 50x;
-        width: 120px;
+        width: 200px;
         margin: 20px 0 0 40px;
         font-size: 12px;
         color: #999999;
@@ -45,31 +45,34 @@
   } 
 }    
 
-  .message_list{
-    background-color: #fafafa;
-    height: calc(100vh - 190px);
-    width: calc(100vw - 300px);
-    padding: 40px 40px;;
-    &_text{
+.message_contents{
+  background-color: #fafafa;
+  height: calc(100vh - 190px);
+  width: calc(100vw - 300px);
+  padding: 40px 40px;;
+  &_list{
+    height: 100px;
+    &_text_1{
       height: 30px;
-      padding-bottom: 40px;
+      padding-bottom: 35px;
       display: flex;
-      &_1{
+      &_name{
         font-weight: bold;
         font-size: 16px;
       }
-      &_2{
+      &_day{
         font-size: 12px;
         color: #999999;
         margin-left: 10px;
       }
     }
-    &_text_10{
+    &_text_2{
       height: 60px;
       margin-bottom: 10px;
       font-size: 14px;
       color: #434A54;
-    }
+    }  
+  }
     &_text2{
       height: 30px;
       padding-bottom: 40px;
@@ -97,22 +100,18 @@
   height: 90px;
   width: calc(100vw - 300px);
   padding: 20px 40px ;
-  &_2{
-    display: flex;
-    position: relative;
-    &_text{
-      background-color: white;
-      height: 50px;
-      width: calc(100% - 115px);
-      padding: 15px 40px 15px 10px;
-      &_image{
-        position: absolute;
-        top: 5px;
-        right: 125px;
-        font-size: 25px;
-        &_file{
-          display: none;
-        }
+  position: relative;
+  &_text{
+    height: 50px;
+    width: calc(100% - 105px);
+    padding: 15px 40px 15px 10px;
+    &_image{
+      position: absolute;
+      top: 30px;
+      right: 165px;
+      font-size: 25px;
+      &_file{
+        display: none;
       }
     }
     &_btn{
@@ -120,13 +119,10 @@
       height: 50px;
       width: 100px;
       padding: 12px 30px;
-      margin-left: 15px;
       position: absolute;
-      right: 0px;
-      a{
+      bottom: 20px;
+      right: 30px;
       color: white;
-      text-decoration: none;
-      }
     }
   }
 }

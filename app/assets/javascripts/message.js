@@ -60,7 +60,6 @@ $(function(){
     .fail(function() {
       alert('メッセージを送信できません');
     });
-    //追記部分
     return false;
 })
 });

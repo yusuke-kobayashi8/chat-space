@@ -18,7 +18,7 @@
   .message_form
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'message_form_text', placeholder: 'type a message'
-      .message_form_text 
+      .message_form_image 
         = f.label :image, class: "message_form_text_image" do
           = icon('fas', 'image')
           = f.file_field :image, class: "message_form_text_image_file"
